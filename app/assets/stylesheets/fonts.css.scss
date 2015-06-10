@@ -1,0 +1,34 @@
+@font-face{ 
+  font-family: 'opensans-regular';
+  src: url(font-path('opensans-regular-webfont.eot'));
+  src: url(font-path('opensans-regular-webfont.eot?#iefix')) format('embedded-opentype'),
+       url(font-path('opensans-regular-webfont.woff')) format('woff'),
+       url(font-path('opensans-regular-webfont.ttf')) format('truetype'),
+       url(font-path('opensans-regular-webfont.svg#webfont')) format('svg');
+}
+
+@font-face{ 
+  font-family: 'opensans-bold';
+  src: url(font-path('opensans-bold-webfont.eot'));
+  src: url(font-path('opensans-bold-webfont.eot?#iefix')) format('embedded-opentype'),
+       url(font-path('opensans-bold-webfont.woff')) format('woff'),
+       url(font-path('opensans-bold-webfont.ttf')) format('truetype'),
+       url(font-path('opensans-bold-webfont.svg#webfont')) format('svg');
+}
+
+@font-face{ 
+  font-family: 'opensans-extrabold';
+  src: url(font-path('opensans-extrabold-webfont.eot'));
+  src: url(font-path('opensans-extrabold-webfont.eot?#iefix')) format('embedded-opentype'),
+       url(font-path('opensans-extrabold-webfont.woff')) format('woff'),
+       url(font-path('opensans-extrabold-webfont.ttf')) format('truetype'),
+       url(font-path('opensans-extrabold-webfont.svg#webfont')) format('svg');
+}
+@font-face{ 
+  font-family: 'opensans-semibold';
+  src: url(font-path('opensans-semibold-webfont.eot'));
+  src: url(font-path('opensans-semibold-webfont.eot?#iefix')) format('embedded-opentype'),
+       url(font-path('opensans-semibold-webfont.woff')) format('woff'),
+       url(font-path('opensans-semibold-webfont.ttf')) format('truetype'),
+       url(font-path('opensans-semibold-webfont.svg#webfont')) format('svg');
+}
