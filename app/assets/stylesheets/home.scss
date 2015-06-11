@@ -6,7 +6,7 @@
 
  body {
   overflow-x: hidden;
-  font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "texgyreadventor-regular","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .text-muted {
@@ -51,8 +51,8 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: 'texgyreadventor-regular',"Helvetica Neue",Helvetica,Arial,sans-serif;
   text-transform: capitalize;
-  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .img-centered {
@@ -174,8 +174,12 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-brand {
-  font-family: "opensans-regular";
+  font-family: "texgyreadventor-regular";
   color: #fed136;
+}
+
+.navbar-brand{
+  padding: 0 0 0 15px;
 }
 
 .navbar-default .navbar-brand:hover,
