@@ -70,7 +70,7 @@ h6 {
 .btn-primary {
   border-color: #fed136;
   text-transform: uppercase;
-  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: 'texgyreadventor-regular',"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 700;
   color: #fff;
   background-color: #fed136;
@@ -118,14 +118,14 @@ fieldset[disabled] .btn-primary.active {
 
 .btn-xl {
   padding: 20px 40px;
-  border-color: #fed136;
+  border-color: #ff9900;
   border-radius: 3px;
   text-transform: uppercase;
-  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: 'texgyreadventor-regular',"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 18px;
   font-weight: 700;
   color: #fff;
-  background-color: #fed136;
+  background-color: #ff9900;
 }
 
 .btn-xl:hover,
@@ -133,9 +133,9 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
-  border-color: #f6bf01;
+  border-color: #F09506;
   color: #fff;
-  background-color: #fec503;
+  background-color: #F09506;
 }
 
 .btn-xl:active,
@@ -159,8 +159,8 @@ fieldset[disabled] .btn-xl:active,
 .btn-xl.disabled.active,
 .btn-xl[disabled].active,
 fieldset[disabled] .btn-xl.active {
-  border-color: #fed136;
-  background-color: #fed136;
+  border-color: #ff9900;
+  background-color: #ff9900;
 }
 
 .btn-xl .badge {
@@ -209,7 +209,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .nav li a {
   text-transform: uppercase;
-  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: 'texgyreadventor-regular',"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 400;
   letter-spacing: 1px;
   color: #000;
@@ -295,7 +295,7 @@ header .intro-text .intro-lead-in {
 header .intro-text .intro-heading {
   margin-bottom: 25px;
   text-transform: uppercase;
-  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: 'texgyreadventor-regular',"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 50px;
   font-weight: 700;
   line-height: 50px;
@@ -318,7 +318,7 @@ header .intro-text .intro-heading {
   header .intro-text .intro-heading {
     margin-bottom: 50px;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'texgyreadventor-regular',"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 75px;
     font-weight: 700;
     line-height: 75px;
@@ -659,9 +659,11 @@ aside.clients img {
 
 section#contact {
   background-color: #222;
-  background-image: url(../img/map-image.png);
+  background-image: url('map-image.png');
   background-position: center;
   background-repeat: no-repeat;
+  margin-top: -20px;
+  padding: 50px 0;
 }
 
 section#contact .section-heading {
@@ -692,28 +694,28 @@ section#contact .form-control:focus {
 
 section#contact::-webkit-input-placeholder {
   text-transform: uppercase;
-  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: 'texgyreadventor-regular',"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 700;
   color: #bbb;
 }
 
 section#contact:-moz-placeholder {
   text-transform: uppercase;
-  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: 'texgyreadventor-regular',"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 700;
   color: #bbb;
 }
 
 section#contact::-moz-placeholder {
   text-transform: uppercase;
-  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: 'texgyreadventor-regular',"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 700;
   color: #bbb;
 }
 
 section#contact:-ms-input-placeholder {
   text-transform: uppercase;
-  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: 'texgyreadventor-regular',"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 700;
   color: #bbb;
 }
@@ -730,7 +732,7 @@ footer {
 footer span.copyright {
   text-transform: uppercase;
   text-transform: none;
-  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: 'texgyreadventor-regular',"Helvetica Neue",Helvetica,Arial,sans-serif;
   line-height: 40px;
 }
 
@@ -738,7 +740,7 @@ footer ul.quicklinks {
   margin-bottom: 0;
   text-transform: uppercase;
   text-transform: none;
-  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: 'texgyreadventor-regular',"Helvetica Neue",Helvetica,Arial,sans-serif;
   line-height: 40px;
 }
 
