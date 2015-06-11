@@ -32,3 +32,12 @@
        url(font-path('opensans-semibold-webfont.ttf')) format('truetype'),
        url(font-path('opensans-semibold-webfont.svg#webfont')) format('svg');
 }
+
+@font-face{ 
+  font-family: 'texgyreadventor-regular';
+  src: url(font-path('texgyreadventor-regular-webfont.eot'));
+  src: url(font-path('texgyreadventor-regular-webfont.eot?iefix')) format('eot'),
+       url(font-path('texgyreadventor-regular-webfont.woff')) format('woff'),
+       url(font-path('texgyreadventor-regular-webfont.ttf')) format('truetype'),
+       url(font-path('texgyreadventor-regular-webfont.svg#webfont')) format('svg');
+}
