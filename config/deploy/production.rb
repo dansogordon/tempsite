@@ -48,9 +48,9 @@ server 'www.jyaasa.com', user: 'deployer', roles: %w{web app}, my_property: :my_
 # Global options
 # --------------
  set :ssh_options, {
-#    keys: %w(/home/rlisowski/.ssh/id_rsa),
-   forward_agent: false,
-#    auth_methods: %w(password)
+  forward_agent: true, 
+  paranoid: true, 
+  keys: "~/.ssh/id_rsa" 
  }
 #
 # The server-based syntax can be used to override options:
