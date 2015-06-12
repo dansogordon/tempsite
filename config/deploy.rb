@@ -6,14 +6,7 @@ set :repo_url, 'git@github.com:dansogordon/tempsite.git'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
-role :app, 'www.jyaasa.com'
-set :rvm_type, :system
-set :rvm_ruby_version, '2.1.2'
 
-
-set :bundle_flags, '--deployment'
-
-server 'www.jyaasa.com', user: 'deployer', roles: %w{web app}, my_property: :my_value
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, '/home/deployer/www/staging/'
 

@@ -7,7 +7,14 @@
 # server 'example.com', user: 'deploy', roles: %w{app web}, other_property: :other_value
 # server 'db.example.com', user: 'deploy', roles: %w{db}
 
+role :app, 'www.jyaasa.com'
+set :rvm_type, :system
+set :rvm_ruby_version, '2.1.2'
 
+
+set :bundle_flags, '--deployment'
+
+server 'www.jyaasa.com', user: 'deployer', roles: %w{web app}, my_property: :my_value
 # role-based syntax
 # ==================
 
