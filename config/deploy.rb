@@ -2,7 +2,7 @@
 lock '3.4.0'
 
 set :application, 'NodeBomb'
-set :repo_url, 'github.com/dansogordon/tempsite.git'
+set :repo_url, 'git@github.com:dansogordon/tempsite.git'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
