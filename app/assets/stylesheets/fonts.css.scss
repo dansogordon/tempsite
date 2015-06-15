@@ -41,3 +41,12 @@
        url(font-path('texgyreadventor-regular-webfont.ttf')) format('truetype'),
        url(font-path('texgyreadventor-regular-webfont.svg#webfont')) format('svg');
 }
+
+@font-face{ 
+  font-family: 'texgyreadventor-bold';
+  src: url(font-path('texgyreadventor-bold-webfont.eot'));
+  src: url(font-path('texgyreadventor-bold-webfont.eot?iefix')) format('eot'),
+       url(font-path('texgyreadventor-bold-webfont.woff')) format('woff'),
+       url(font-path('texgyreadventor-bold-webfont.ttf')) format('truetype'),
+       url(font-path('texgyreadventor-bold-webfont.svg#webfont')) format('svg');
+}
