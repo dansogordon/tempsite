@@ -1,8 +1,14 @@
+<%if params[:controller]=='home'  && params[:action]=='index'
+    add_class="home_logocontent"
+  else
+    add_class="inner_logocontent"
+  end 
+%>
 <!-- Navigation -->
 <nav class="navbar navbar-default main-navbar">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header page-scroll">
+    <div class="navbar-header page-scroll <%= add_class %> ">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
