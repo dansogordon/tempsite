@@ -8,7 +8,7 @@
     color: #fff
 a.navbar-brand 
   display: block
-  height: 90px
+
   p
     font-size: 13px
     width: 330px
@@ -92,10 +92,9 @@ a.navbar-brand
     background-image: asset_url('3.jpg')
 
 
-header
+header.hero
   height: 660px
   position: relative
-  margin-top: 80px
   section
     padding: 0
   .container
@@ -108,7 +107,7 @@ header
     h1
       font-size: 65px
       text-transform: uppercase
-      letter-spacing: -1px
+      letter-spacing: -1cpx
     h3 
       font-size: 40px
       color: #31BADA
@@ -139,8 +138,38 @@ header
 
 section
   padding: 0px
+
+// Presentaiton
+
+.presentation
+  margin: 50px 0
+  .sub_heading
+    margin: 10px 0
+  h3
+    font-weight: bold
+    margin-top: 30px
+  h2
+    text-transform: uppercase
+//section seperation
+
+.seperation
+  width: 45%
+  position: relative
+  margin: 20px auto
+  .line
+    border-bottom: 1px solid #ccc
+  span
+    padding: 10px
+    background: #ccc
+    border-radius: 100%
+    width: 10px
+    height: 10px
+    display: block
+    margin: 0 auto
+    z-index: 1
+    position: relative
+    margin-top: -10px
 #team
-  margin-top: -80px
   padding-bottom: 60px
 .section-heading
   font-weight: normal
@@ -170,7 +199,7 @@ section
   font-size: 18px
   line-height: 25px
   margin-top: 10px
-  padding: 0 23px
+  padding: 0 45px
 
 
 .community-row
@@ -194,6 +223,17 @@ section
   margin: 0 auto
   height: 170px
   width: 170px
+  border: 5px solid #000
+  .fa
+    color: #000
+.community_blocks
+  position: relative
+.node-bomb-community
+  span
+    position: absolute
+    right: -6px
+    top: 80px
+    font-size: 20px
 
 .suitcase
   background-color: #01A33E

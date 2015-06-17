@@ -268,7 +268,7 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 
-header {  
+header.hero {  
   color: #fff;
   background-attachment: scroll;
   background-image: asset_url('header_bg.jpg');
@@ -278,8 +278,6 @@ header {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  position: relative;
-  top: -120px
 }
 
 header .intro-text {
