@@ -58,17 +58,47 @@ a.navbar-brand
     display: inline-block
     width: 300px
     color: #fff
+    height: 40px
+  // .btn
+  //   width: 100px
+  //   background: #ff9900
+  //   border: none
+  //   color: #fff
+  //   margin-top: -4px
+  //   &:hover
+  //     background: #FED136
   .btn
+    -moz-box-shadow: inset 0px 1px 0px 0px #fce2c1
+    -webkit-box-shadow: inset 0px 1px 0px 0px #fce2c1
+    box-shadow: inset 0px 1px 0px 0px #fce2c1
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffc477), color-stop(1, #fb9e25) )
+    background: -moz-linear-gradient( center top, #ffc477 5%, #fb9e25 100% )
+    background-color: #ffc477
+    text-indent: 0
+    border: 1px solid #eeb44f
+    display: inline-block
+    color: #ffffff
+    font-family: Arial
+    font-size: 16px
+    font-weight: bold
+    font-style: normal
+    height: 40px
+    line-height: 20px
     width: 100px
-    background: #ff9900
-    border: none
-    color: #fff
-    margin-top: -4px
-    &:hover
-      background: #FED136
+    text-decoration: none
+    text-align: center
+    text-shadow: 1px 1px 0px #cc9f52
+    margin-top: -5px
+
+.btn:hover 
+  background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #fb9e25), color-stop(1, #ffc477) )
+  background: -moz-linear-gradient( center top, #fb9e25 5%, #ffc477 100% )  
+  background-color: #fb9e25
+
+
   .form-control, .btn  
     height: 40px
-    border-radius: 0
+    // border-radius: 0
 
   label
     font-weight: normal
