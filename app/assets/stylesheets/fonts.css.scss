@@ -50,3 +50,11 @@
        url(font-path('texgyreadventor-bold-webfont.ttf')) format('truetype'),
        url(font-path('texgyreadventor-bold-webfont.svg#webfont')) format('svg');
 }
+
+@font-face{ 
+  font-family: 'Century gothic';
+  src: url(font-path('gothic.eot'));
+  src: url(font-path('gothic.eot?iefix')) format('eot'),
+       url(font-path('gothic.woff')) format('woff'),
+       url(font-path('gothic.ttf')) format('truetype')       
+}
