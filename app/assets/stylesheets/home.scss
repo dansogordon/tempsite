@@ -278,6 +278,8 @@ header.hero {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+  z-index: 1;
+  top: -80px;
 }
 
 header .intro-text {
