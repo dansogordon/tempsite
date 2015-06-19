@@ -9,6 +9,7 @@ set :repo_url, 'git@github.com:dansogordon/tempsite.git'
 role :app, 'www.jyaasa.com'
 set :rvm_type, :system
 set :rvm_ruby_version, '2.1.2'
+set :branch , "version_2"
 
 
 set :bundle_flags, '--deployment'
