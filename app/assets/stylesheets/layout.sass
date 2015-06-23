@@ -418,13 +418,16 @@ section
     margin-bottom: 0px
 
 #showcase
-  margin: 60px auto
+  margin: 0px auto 
+  background: #f1f1f1
   img
     width: 100%
   h2
     color: #000
     margin-top: 75px
 
+#showcase>.container
+  padding: 60px 0
 .carousel-control.right,
 .carousel-control.left  
   background-image: none
@@ -433,6 +436,24 @@ section
   padding: 50px
 .deck
   background: #565454
+
+#showcase 
+  #carousel-example-generic
+    padding: 0
+  .carousel-indicators li
+    background: #ccc
+    border: 1px solid #b2b2b2
+  .item
+    height: 456px
+    line-height: 456px
+    text-align: center
+    img
+      vertical-align: middle
+.carousel-control
+  top: 40%
+  .fa
+    color: #000
+    font-size: 60px
 @media(max-width:768px) 
   .email_register 
     width: 95%
