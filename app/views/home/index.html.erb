@@ -1,21 +1,68 @@
 <!-- Header -->
 <header class="hero">  
-  <div class="container">
+  <div class="container banner-margin-top">
     <div class="row">      
       <section class="header_content">
-        <h1>increase.<br> connect & support</h1>
-        <h3>Whatyouwillbuild</h3>
+        <h1 ><span>increase.</span><br> connect & support</h1>
+        <h3 class="pull-right"><span>| </span> &nbsp;&nbsp;&nbsp; Whatyouwillbuild</h3>
+        <p class="banner-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at lectus ac dolor bibendum suscipit. Vivamus laoreet dapibus neque vel</p>
         <section class="email_register ">
           <form action="" class="">
             <div class="form-group">
-              <label for="">Developer Register now for early access</label><br>
+              <label for=""> Register now developers for early access</label><br>
               <input type="text" class="form-control" placeholder="Enter your email address">
-              <button type="submit" class="btn btn-default">Submit</button>            
+              <button type="submit" class="btn btn-default email-submit-btn">Submit</button>            
             </div>
           </form>
         </section>       
       </section>
     </div>
+  </div>
+  <div id="navigation">
+    <nav class="navbar navbar-default main-navbar">
+      <div class="container">
+        <div class="row">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="banner-nav navbar-brand page-scroll" href="/">
+              <%=image_tag ("nav-logo.png") %><!--  <span><span>Node</span>Bomb</span> -->
+            </a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="hidden">
+                <a href="#page-top"></a>
+              </li>
+              <li>          
+                <a class="page-scroll" href="/about">About</a>
+              </li>
+              <li>
+                <a class="page-scroll" href="/deck">Deck</a>
+              </li>
+              <li>
+                <a class="page-scroll" href="#" data-toggle="modal" data-target=".video-modal-lg">Video</a>
+              </li>
+              <li>
+                <a class="page-scroll" href="/staff">Staff</a>
+              </li>
+              <li>
+                <a class="page-scroll" href="/contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        <!-- /.navbar-collapse -->
+        </div>
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
   </div>
 </header>
 <!--End Header -->
@@ -72,7 +119,7 @@
       <div class="col-sm-4">
         <div class="team_member text-center">
           <div class="team_images mem3"></div>
-                               
+
           <h4><span class="story-prsn-name"><strong>Pavel</strong></span> <span>Canada</span></h4>
           <p> "The Q&A Groups helped me fix a bug in my code"</p>                       
         </div>
@@ -135,20 +182,20 @@
         <ol class="carousel-indicators">
           <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
           <%  (2..5).each do |n|%>
-            <li data-target="#carousel-example-generic" data-slide-to="#{n}"></li>
-           <%end%>
+          <li data-target="#carousel-example-generic" data-slide-to="#{n}"></li>
+          <%end%>
         </ol>
         <!-- Wrapper for slides -->      
-          <div class="carousel-inner" role="listbox">
-            <div class="item active">
-              <%= image_tag ('showcase.png')%>
-            </div>
-          <%  (2..5).each do |n|%>
-            <div class="item ">
-              <%=image_tag "bslide#{n}.jpg"%>
-            </div>
-          <%end%>
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <%= image_tag ('showcase.png')%>
           </div>
+          <%  (2..5).each do |n|%>
+          <div class="item ">
+            <%=image_tag "bslide#{n}.jpg"%>
+          </div>
+          <%end%>
+        </div>
         <!-- Controls -->
         <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
           <span class="fa fa-angle-left " aria-hidden="true"></span>

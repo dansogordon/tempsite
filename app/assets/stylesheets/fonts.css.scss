@@ -1,6 +1,6 @@
 
 @font-face{ 
-  font-family: 'Raleway';
+  font-family: 'raleway-black';
   src: url(font-path('raleway-black-webfont.ttf'));
   src: url(font-path('raleway-black-webfont.eot')) format('embedded-opentype'),
        url(font-path('raleway-black-webfont.woff')) format('woff'),
@@ -8,7 +8,7 @@
        url(font-path('raleway-black-webfont.svg')) format('svg');
 }
 @font-face{ 
-  font-family: 'Raleway';
+  font-family: 'raleway-bold';
   src: url(font-path('raleway-bold-webfont.ttf'));
   src: url(font-path('raleway-bold-webfont.eot')) format('embedded-opentype'),
        url(font-path('raleway-bold-webfont.woff')) format('woff'),
@@ -17,7 +17,7 @@
 }
 
 @font-face{ 
-  font-family: 'Raleway';
+  font-family: 'raleway-bold-webfont';
   src: url(font-path('raleway-bold-webfont-webfont.ttf'));
   src: url(font-path('raleway-bold-webfont-webfont.eot')) format('embedded-opentype'),
        url(font-path('raleway-bold-webfont-webfont.woff')) format('woff'),
@@ -54,7 +54,7 @@
 
 
 @font-face{ 
-  font-family: 'raleway-light';
+  font-family: 'raleway-medium';
   src: url(font-path('raleway-medium-webfont.ttf'));
   src: url(font-path('raleway-medium-webfont.eot')) format('embedded-opentype'),
        url(font-path('raleway-medium-webfont.woff')) format('woff'),
@@ -63,7 +63,7 @@
 }
 
 @font-face{ 
-  font-family: 'raleway-light';
+  font-family: 'raleway-regular';
   src: url(font-path('raleway-regular-webfont.ttf'));
   src: url(font-path('raleway-regular-webfont.eot')) format('embedded-opentype'),
        url(font-path('raleway-regular-webfont.woff')) format('woff'),

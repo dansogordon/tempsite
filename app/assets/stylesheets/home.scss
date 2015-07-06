@@ -6,7 +6,7 @@
 
  body {
   overflow-x: hidden;
-  font-family: "texgyreadventor-regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "raleway-regular","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .text-muted {
@@ -216,13 +216,13 @@ fieldset[disabled] .btn-xl.active {
   font-family: 'texgyreadventor-regular',"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 400;
   letter-spacing: 1px;
-  color: #000;
+  color: #fff;
 }
 
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
   outline: 0;
-  color: #ff9900;
+  color: #000;
 }
 
 .navbar-default .navbar-nav>.active>a {
