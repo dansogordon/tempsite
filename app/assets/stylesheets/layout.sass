@@ -1,5 +1,5 @@
 .navbar-default
-  padding: 15px 0
+  padding: 0px 
 .inner_logocontent
   a.navbar-brand p
     color: #333
@@ -12,6 +12,7 @@
   bottom: 0px
   top: 178px
   width: 100%
+  padding: 15px 0px
 .banner-nav
   img
     margin: 0px !important
@@ -28,15 +29,8 @@ a.navbar-brand
 .navbar-brand img
   width: 100%
   display: inline-block
-  margin: 20px 0px
-.navbar-brand > span  
-  font-size: 46px
-  position: relative
-  top: 9px
-  color: #000
-  margin-left: -8px
-.navbar-brand span span
-  font-family: 'texgyreadventor-bold'  
+  margin: 25px 0px
+
 .nav > li > 
   padding: 10px 15px
   font-size: 20px
@@ -63,13 +57,15 @@ a.navbar-brand
     width: 80%
 .form-wrap
   position: relative
-.email_register  
-  width: 63%
+  width: 48%
+.email_register,
+.bottom-email_register  
+  width: 100%
   text-align: left
   .form-control
     background-color: rgba(0, 0, 0, 0.48)   
     display: inline-block
-    width: 70%
+    width: 100%
     color: #fff
     border-color: #fff
     font-size: 19px
@@ -84,14 +80,16 @@ a.navbar-brand
 
   .email-submit-btn
     position: absolute
-    margin-left: -142px
     box-shadow: none !important
     height: 48px !important
     background-color: #FF5858
     border-top-left-radius: 0px !important
     border-bottom-left-radius: 0px !important
+    top: 0px
+    right: 1px
     &:hover
       background-color: #ED4444
+
   .btn
     color: #fff
     font-size: 20px
@@ -134,10 +132,14 @@ a.navbar-brand
     background-image: asset_url('2.jpg')
   .mem3
     background-image: asset_url('3.jpg')
-
+#team
+  background: asset_url('stories-bg.png')
+  min-height: 400px
+  width: 100%
+  padding : 60px 0px
 
 header.hero
-  height: 650px
+  height: 680px
   position: relative
   width: 100%
   section
@@ -159,13 +161,18 @@ header.hero
         font-size: 40px
         font-family: 'raleway-regular'
         font-weight: normal
-    h3 
-      font-size: 25px
-      color: #fff
-      position: relative
-      top: -82px
-      left: -300px
-      font-family: 'raleway-regular'
+      .bold-banner-txt
+        border-right: 1px solid #fff
+        padding-right: 30px
+        font-family: 'raleway-bold'
+        font-weight: bold
+        font-size: 55px
+      .what-yuo-build-txt 
+        font-size: 25px
+        color: #fff
+        font-family: 'raleway-regular'
+        margin-left: 30px
+        vertical-align: top
     .banner-txt
       font-size: 20px
       width: 60%
@@ -200,10 +207,10 @@ section
 // Presentaiton
 
 .presentation
-  margin: -80px 0 50px 0
   background: #E4E6EF
   padding: 60px 0
-  text-align: center  
+  text-align: center 
+  margin-top: -80px 
   .sub_heading
     margin: 10px 0
     padding: 22px 0px
@@ -269,21 +276,24 @@ section
   font-family: 'raleway-bold'
 .story-prsn-name
   font-size: 25px
+  color: #08B7E1
 .team_member
   margin: 10px 50px 30px
 .team_member h4
   line-height: 0.4
   padding-bottom: 40px
+  color: #fff
 .team_member h4 > span
   padding-right: 5px
 .team_member h4 > span + span
-  border-left: 1px solid #000  
+  border-left: 1px solid #fff  
   padding-left: 10px
 .team_member p
   text-align: center
   font-size: 22px
   line-height: 34px
   padding: 0 38px
+  color: #fff
 .team_images
   width: 110px
   height: 110px
@@ -294,37 +304,54 @@ section
 
 .node-bomb-community
   text-align: center
-.node-bomb-community p
-  font-size: 18px
-  line-height: 25px
-  margin-top: 10px
-  padding: 0 45px
-  color: #fff
-
+.node-bomb-community h3
+  font-size: 21px
+  line-height: 28px
+  margin-top: 20px
+  padding: 0 34px
+  color: #33535B
+  font-family: raleway-regular
+  text-transform: none
+.community-txt-1,
+.community-txt-2,
+.community-txt-3,
+.community-txt-4
+  font-size: 16px
+  color: #8F9A9F
+  padding: 0px 15px
+.community-txt-1,
+.community-txt-3,
+.community-txt-4
+  padding: 28px 15px
 .community-row
   margin-left: -35px
   margin-right: -35px 
 
 #community
   padding: 30px 0px 50px
-  background: #000
-
+  background: #F9F9F9
+  
 .community-section-heading
-  margin-bottom: 40px
+  margin-bottom: 22px
   text-transform: capitalize
   font-weight: normal
   font-size: 35px
-  color: #fff
-  font-family: "texgyreadventor-bold"
+  color: #08B7E1
+  font-family: "raleway-bold"
+  span
+    color: #000
+.community-2-heading
+  color: #08B7E1
+  font-family: "raleway-bold"
+  margin-bottom: 40px
 
 .community-btns
   font-size: 70px
-  padding: 35px
   border-radius: 50%
   color: #fff
   margin: 0 auto
-  height: 170px
-  width: 170px
+  height: 141px
+  width: 141px
   border: 2px solid #fff
   line-height: 80px
   .fa
@@ -474,16 +501,25 @@ section
     margin-bottom: 0px
 
 #showcase
-  margin: 0px auto 
-  background: #f1f1f1
+  background: asset_url('nodebomb-view-bg.png')
+  height: 663px
+  overflow-y: hidden
   img
-    width: 100%
+    height: 412px
+    width: 899px
+    margin: 57px 0px 0px
   h2
-    color: #000
-    margin-top: 75px
-
-#showcase>.container
-  padding: 60px 0
+    color: #fff
+    font-family: raleway-bold
+    font-size: 50px
+    text-transform: none
+    line-height: 58px
+    margin-bottom: 20px
+    span
+      color: #08B7E1
+      font-size: 40px
+#showcase > .container
+  padding: 60px 0px 0px
 .carousel-control.right,
 .carousel-control.left  
   background-image: none
@@ -510,7 +546,44 @@ section
     .fa
       color: #000
       font-size: 60px
-      
+#bottom-register-form
+  background-color: #E6E6E6
+.bottom-email_register
+  width: 100%
+  padding: 30px 0px
+  label
+    color: #000
+    font-size: 27px
+    margin: 0px
+.bottom-form-wrap
+  .form-control
+    width: 100% !important
+    background-color: #fff
+.bottom-email-submit-btn
+  right: 16px !important
+.footer-bottom-line
+  border-bottom: 1px solid #555
+
+.form-control
+  box-shadow: none 
+
+.inner-page
+  .navbar-default
+    padding: 25px 0
+  .navbar-default .nav li a 
+    color: #555
+  .navbar-brand img
+    width: 40px
+    display: inline-block
+    margin: 0px
+  .navbar-brand > span  
+    font-size: 46px
+    position: relative
+    top: 9px
+    color: #000
+    margin-left: -8px
+  .navbar-brand span span
+    font-family: 'texgyreadventor-bold'  
 @media(max-width:768px) 
   .email_register 
     width: 95%

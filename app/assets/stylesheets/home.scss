@@ -51,7 +51,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'texgyreadventor-regular',"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: 'raleway-regular',"Helvetica Neue",Helvetica,Arial,sans-serif;
   text-transform: capitalize;
 }
 
@@ -731,14 +731,14 @@ section#contact .text-danger {
 footer {
   padding: 25px 0;
   text-align: center;
-  background: #333
+  background: #333;
 }
 
 footer span.copyright {
   text-transform: uppercase;
   text-transform: none;
   font-family: 'texgyreadventor-regular',"Helvetica Neue",Helvetica,Arial,sans-serif;
-  line-height: 40px;
+  line-height: 70px;
   color: #fff
 }
 
@@ -747,9 +747,17 @@ footer ul.quicklinks {
   text-transform: uppercase;
   text-transform: none;
   font-family: 'texgyreadventor-regular',"Helvetica Neue",Helvetica,Arial,sans-serif;
-  line-height: 40px;
+  line-height: 60px;
 }
-
+.quicklinks a{
+  color: #08B7E1;
+  font-size: 20px;
+  margin-top: 30px;                                                              
+}
+.quicklinks a:hover{
+  color: #fff;
+  text-decoration: none;
+}
 ul.social-buttons {
   margin-bottom: 0;
 }
@@ -758,12 +766,10 @@ ul.social-buttons li a {
   display: block;
   width: 40px;
   height: 40px;
-  border-radius: 100%;
-  font-size: 20px;
+  font-size: 30px;
   line-height: 40px;
   outline: 0;
   color: #fff;
-  background-color: #222;
   -webkit-transition: all .3s;
   -moz-transition: all .3s;
   transition: all .3s;
@@ -772,7 +778,7 @@ ul.social-buttons li a {
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-  background-color: #ff9900;
+  color: #08B7E1;
 }
 
 .btn:focus,

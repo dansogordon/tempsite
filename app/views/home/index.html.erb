@@ -1,11 +1,9 @@
-Header -->
 <header class="hero">  
   <div class="container banner-margin-top">
     <div class="row">      
       <section class="header_content">
-        <h1 ><span>increase.</span><br> connect & support</h1>
-        <h3 class="pull-right"><span>| </span> &nbsp;&nbsp;&nbsp; Whatyouwillbuild</h3>
-        <p class="banner-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at lectus ac dolor bibendum suscipit. Vivamus laoreet dapibus neque vel</p>
+        <h1 ><span>increase.</span><br> <span class="bold-banner-txt">connect & support</span><span class="what-yuo-build-txt">Whatyouwillbuild</span></h1>
+        <p class="banner-txt">The Online Work Showcase for Software Developers, enhance and connect your entire work footprint with one click. We make connecting you to the job and to fellow Developers across the globe easy.</p>
         <section class="email_register ">
           <form action="" class="">
             <div class="form-group">
@@ -87,7 +85,7 @@ Header -->
           <iframe width="825" height="490" src="https://www.youtube.com/embed/SkdrYWhh-8s" frameborder="0" allowfullscreen></iframe>
         </div>
         <article>
-          <p class="Presentation-article">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at lectus ac dolor bibendum suscipit. Vivamus laoreet dapibus neque vel ornare. Curabitur at tellus a magna suscipit lobortis. Donec gravida lacinia ligula, eu finibus elit. Aliquam ut turpis iaculis, suscipit nisl quis, dignissim metus.
+          <p class="Presentation-article">One of the fastest growing professions in the world...currently the demand to support that voice, outweighs the supply
           </p>
         </article>
       </div>
@@ -99,6 +97,18 @@ Header -->
 <section id="team">
   <div class="container">
     <div class="row team">
+
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
       <div class="col-sm-12">
         <div class="team_member text-center">
           <div class="team_images mem1"></div>
@@ -106,6 +116,33 @@ Header -->
           <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at lectus ac dolor bibendum suscipit. Vivamus laoreet dapibus neque vel ornare. Curabitur at tellus a magna suscipit lobortis.Lorem ipsum dolor sit amet,"</p>                      
         </div>
       </div>
+    </div>
+    <div class="item">
+      <div class="col-sm-12">
+        <div class="team_member text-center">
+          <div class="team_images mem1"></div>
+          <h4><span class="story-prsn-name"><strong>Eric</strong></span> <span>USA</span></h4>
+          <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at lectus ac dolor bibendum suscipit. Vivamus laoreet dapibus neque vel ornare. Curabitur at tellus a magna suscipit lobortis.Lorem ipsum dolor sit amet,"</p>                      
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="col-sm-12">
+        <div class="team_member text-center">
+          <div class="team_images mem1"></div>
+          <h4><span class="story-prsn-name"><strong>Eric</strong></span> <span>USA</span></h4>
+          <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at lectus ac dolor bibendum suscipit. Vivamus laoreet dapibus neque vel ornare. Curabitur at tellus a magna suscipit lobortis.Lorem ipsum dolor sit amet,"</p>                      
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+ 
+</div>
+
+
+
       <!-- <div class="col-sm-4">
         <div class="team_member text-center">
           <div class="team_images mem2"></div>                        
@@ -130,34 +167,48 @@ Header -->
   <div class="container">
     <div class="row community-row">
       <div class="col-lg-12 text-center">
-        <h2 class="community-section-heading">Join the nodeBomb community in 1-2-3-4</h2>
+        <h2 class="community-section-heading"><span>Join the</span> nodeBomb community</h2>
+        <div class="heading-border"></div>
+        <h3 class="community-2-heading">in 1-2-3-4</h3>
       </div>
       <div class="row community_blocks">
         <div class="col-sm-3 text-center">
           <div class="node-bomb-community">
-            <div class="community-btns "><i class="fa fa-suitcase "></i></div>
+            <div class="community-btns ">
+              <%= image_tag("create-portfolio.png", :alt => "community icon") %>
+            </div>
             <span class="fa fa-plus"></span>
-            <p>Create a work portfolio!</p>
+            <h3>Create a work portfolio!</h3>
+            <p class="community-txt-1">Quickly enhance your work profile and increase your work opportunities with an online portfolio.</p>
           </div>
         </div>
         <div class="col-sm-3 text-center">
           <div class="node-bomb-community">
-            <div class="community-btns "><i class="fa fa-users "></i></div>
+            <div class="community-btns ">
+              <%= image_tag("connect-developer.png", :alt => "community icon") %>
+            </div>
             <span class="fa fa-plus"></span>
-            <p>Connect with Developers across the globe</p>
+            <h3>Connect with Developers across the globe</h3>
+            <p class="community-txt-2">Connect with developers across the globe, follow each other, share ideas, share code and more</p>
           </div>
         </div>
         <div class="col-sm-3 text-center">
           <div class="node-bomb-community">
-            <div class="community-btns "><i class="fa fa-comments"></i></div>
+            <div class="community-btns ">
+              <%= image_tag("join-group.png", :alt => "community icon") %>
+            </div>
             <span class="fa fa-plus"></span>
-            <p>Search and join Q&A Groups</p>
+            <h3>Search and join Q&A Groups</h3>
+            <p class="community-txt-3">Search any programming topic or language that interests you and quickly join our group communities and discussions </p>
           </div>
         </div>
         <div class="col-sm-3 text-center">
           <div class="node-bomb-community">
-            <div class="community-btns "><i class="fa fa-usd"></i></div>          
-            <p>Startups connect with Investors</p>
+            <div class="community-btns ">
+              <%= image_tag("startup-with-invester.png", :alt => "community icon") %>
+            </div>          
+            <h3>Startups connect with Investors</h3>
+            <p class="community-txt-4">Startups that meet the criteria can easily post their work to our exponentially growing list of VC's and Angel Investors</p>
           </div>
         </div>
       </div>
@@ -170,43 +221,30 @@ Header -->
 <!-- Showcace -->
 <section id="showcase">
   <div class="container text-center">
-    <div class="col-md-8">    
-      <!-- <div class="row text-center">
-        <iframe width='100%' height='800' src='/Final_NodBomb.pdf' frameborder='0' allowfullscreen></iframe>
-      </div> -->
-      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-          <%  (2..5).each do |n|%>
-          <li data-target="#carousel-example-generic" data-slide-to="#{n}"></li>
-          <%end%>
-        </ol>
-        <!-- Wrapper for slides -->      
-        <div class="carousel-inner" role="listbox">
-          <div class="item active">
-            <%= image_tag ('showcase.png')%>
-          </div>
-          <%  (2..5).each do |n|%>
-          <div class="item ">
-            <%=image_tag "bslide#{n}.jpg"%>
-          </div>
-          <%end%>
-        </div>
-        <!-- Controls -->
-        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-          <span class="fa fa-angle-left " aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-          <span class="fa fa-angle-right " aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+    <div class="row">
+      <div class="displaying-section-heading">
+        <h2>Use easily <br> <span>NodeBomb on any devices</span></h2>
+        <div class="heading-border"></div>
       </div>
+      <%=image_tag("display-group.png", :alt => "Displaying layout") %>
     </div>
-    <div class="col-md-2 col-md-offset-1 text-left"><h2 class="section-heading">Use NodeBomb on any device, easily.</h2></div>
-    
   </div>
-
 </section>
-<!-- End Showcace
+<!-- End Showcace -->
+<!-- bottom register form -->
+<section id="bottom-register-form">
+  <div class="container">
+    <section class="bottom-email_register">
+        <form action="" class="row">
+          <div class="col-md-6 form-group">
+            <label for=""> Developer's Register now  for early access</label><br>
+          </div>
+          <div class="col-md-6 form-wrap bottom-form-wrap text-right">
+            <input type="text" class="form-control" placeholder="Enter your email address">
+            <button type="submit" class="btn btn-default email-submit-btn bottom-email-submit-btn">Submit</button>
+          </div> 
+          </div>
+        </form>
+    </section> 
+  </div>
+</section>

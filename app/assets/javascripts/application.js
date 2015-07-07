@@ -14,3 +14,18 @@
 //= require jquery_ujs
 // = require bootstrap-sprockets
 //= require_tree .
+//
+window.onscroll = changePos;
+
+function changePos() {
+    var header = document.getElementById("navigation");
+    if (window.pageYOffset > 580) {
+        header.style.position = "fixed";
+        header.style.top = 0;
+        header.style.height = "80px";
+
+    } else {
+        header.style.position = "";
+        header.style.top = "";
+    }
+}

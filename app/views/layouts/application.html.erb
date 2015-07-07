@@ -5,9 +5,14 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-</head>
-  <body>  
-  <%= render 'shared/header'%>
+</head>  
+  <% if (params[:controller]=="home" && params[:action] =="index" ) %>
+  <body>
+    <%= render 'shared/header'%>
+  <%else%>  
+  <body class="inner-page">
+    <%=render 'shared/innerheader'%>
+  <%end%>
   <%= yield %>
   <%= render 'shared/footer'%>
 
