@@ -29,3 +29,29 @@ function changePos() {
         header.style.top = "";
     }
 }
+
+screen_width = $(window).width()
+
+$('document').ready(function(){
+navigation=$('ul.navbar-nav').html()                                                
+  if (screen_width > 767)
+    {
+      console.log(navigation)
+      $(navigation).hide()
+    }
+  else
+    {
+    console.log('start')
+      $('.home-top-nav .navbar-collapse ').append(navigation)
+    }
+    // nav = $('.home-page #navigation' ).html();
+    // logo = $('.home-page a.navbar-brand').html();
+    // $('.home-page #navigation , .home-page > nav').remove();
+    // $('body.home-page').prepend(nav) ;
+    // $('.home-page .navbar-collapse').before(logo)
+    // $('.home-page .banner-nav').remove();
+
+   
+})
+
+// $(window).on('resize',function(){location.reload();});

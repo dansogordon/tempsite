@@ -7,7 +7,7 @@
   <%= csrf_meta_tags %>
 </head>  
   <% if (params[:controller]=="home" && params[:action] =="index" ) %>
-  <body>
+<body class="home-page">
     <%= render 'shared/header'%>
   <%else%>  
   <body class="inner-page">
@@ -15,7 +15,6 @@
   <%end%>
   <%= yield %>
   <%= render 'shared/footer'%>
-
   <div class="modal fade video-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
