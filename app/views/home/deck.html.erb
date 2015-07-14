@@ -7,8 +7,8 @@
       <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-        <%  (2..12).each do |n|%>
-          <li data-target="#carousel-example-generic" data-slide-to="#{n}"></li>
+        <%  (1..13).each do |n|%>
+          <li data-target="#carousel-example-generic" data-slide-to="<%=n%>"></li>
          <%end%>
       </ol>
       <!-- Wrapper for slides -->      
@@ -16,7 +16,7 @@
           <div class="item active">
             <%=image_tag "deck-1.png"%>
           </div>
-        <%  (2..12).each do |n|%>
+        <%  (2..13).each do |n|%>
           <div class="item ">
             <%=image_tag "deck-#{n}.png"%>
           </div>
