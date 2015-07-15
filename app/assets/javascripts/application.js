@@ -20,13 +20,16 @@ window.onscroll = changePos;
 function changePos() {
     var header = document.getElementById("navigation");
     if (window.pageYOffset > 580) {
-        header.style.position = "fixed";
-        header.style.top = 0;
-        header.style.height = "80px";
-
+        if (header !== null){
+            header.style.position = "fixed";
+            header.style.top = 0;
+            header.style.height = "80px";
+        }
     } else {
-        header.style.position = "";
-        header.style.top = "";
+        if (header !== null){
+            header.style.position = "";
+            header.style.top = "";
+        }
     }
 }
 
@@ -50,11 +53,17 @@ navigation=$('ul.navbar-nav').html()
     // $('body.home-page').prepend(nav) ;
     // $('.home-page .navbar-collapse').before(logo)
     // $('.home-page .banner-nav').remove();
+    $('#playButton').click(function () {
+        $('#carousel-example-generic').carousel('cycle');
+    });
+    $('#pauseButton').click(function () {
+        $('#carousel-example-generic').carousel('pause');
+    });
 
    
 })
 
 // $(window).on('resize',function(){location.reload();});
-$('.carousel').carousel({
-  interval: 6000
-})
+// $('.carousel').carousel({
+//   interval: 5000
+// })
