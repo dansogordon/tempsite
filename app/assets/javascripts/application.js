@@ -55,3 +55,6 @@ navigation=$('ul.navbar-nav').html()
 })
 
 // $(window).on('resize',function(){location.reload();});
+$('.carousel').carousel({
+  interval: 6000
+})
