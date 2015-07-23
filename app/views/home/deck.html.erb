@@ -42,3 +42,47 @@
     </div>
   </div>
 </div>
+<div id="myModal" class="modal fade" data-backdrop="static" data-keyboard="false" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header deck-pop">
+        <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+        <h4 class="modal-title"><span><i class="fa fa-table"></i>
+        </span>&nbsp;View Deck Board</h4>
+      </div>
+      <div class="modal-body">
+        <form action="" id="UserLoginForm">
+          <span class="user-access-pswd"><p>Password</p></span><span class="password-label"><input type="password" value="" id="password"></span>
+        </form>
+        <div class="seperater">OR</div>
+        <button id="invester-form"type="button" class="btn btn-default request-btn" data-dismiss="modal" class="modal fade" role="dialog" data-toggle="modal" data-target="#myModal1">REQUEST ACCESS</button>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+
+  </div>
+</div>
+<!--End Header -->
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    // $('#myModal').on('hidden.bs.modal', function () {
+    //   debugger;
+    //   window.location.href = "/";
+    // }) 
+    $('#UserLoginForm').submit(function(){
+      var password = $('#password').val();
+      if (password === 'password'){
+        $('#myModal').modal('hide');
+        return false;
+      }else{
+        window.location.href = "/";
+        // return false;
+      }
+    });
+    $('#myModal').modal()
+  })
+</script>
