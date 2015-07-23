@@ -45,7 +45,7 @@
                 <a class="page-scroll" href="/about">About</a>
               </li>
               <li>
-                <a class="page-scroll" href="/deck">Deck</a>
+                <a class="page-scroll" href="#" data-toggle="modal" data-target="#myModal">Deck</a>
               </li>
               <li>
                 <a class="page-scroll" href="#" data-toggle="modal" data-target=".video-modal-lg">Video</a>
@@ -65,6 +65,30 @@
     </nav>
   </div>
 </header>
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header deck-pop">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"><span><i class="fa fa-table"></i>
+</span>&nbsp;View Deck Board</h4>
+      </div>
+      <div class="modal-body">
+        <form action="">
+          <span class="user-access-pswd"><p>Password</p></span><span class="password-label"><input type="password" value=""></span>
+        </form>
+        <div class="seperater">OR</div>
+        <button type="button" class="btn btn-default request-btn" data-dismiss="modal">REQUEST ACCESS</button>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+
+  </div>
+</div>
 <!--End Header -->
 
 <!-- NodeBomb presention -->
