@@ -11,4 +11,6 @@ class HomeController < ApplicationController
   end
   def contact
   end
+  def invester_form
+  end
 end

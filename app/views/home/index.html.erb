@@ -74,14 +74,14 @@
       <div class="modal-header deck-pop">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
         <h4 class="modal-title"><span><i class="fa fa-table"></i>
-</span>&nbsp;View Deck Board</h4>
+        </span>&nbsp;View Deck Board</h4>
       </div>
       <div class="modal-body">
         <form action="">
           <span class="user-access-pswd"><p>Password</p></span><span class="password-label"><input type="password" value=""></span>
         </form>
         <div class="seperater">OR</div>
-        <button type="button" class="btn btn-default request-btn" data-dismiss="modal">REQUEST ACCESS</button>
+        <button id="invester-form"type="button" class="btn btn-default request-btn" data-dismiss="modal" class="modal fade" role="dialog" data-toggle="modal" data-target="#myModal1">REQUEST ACCESS</button>
       </div>
       <div class="modal-footer">
       </div>
@@ -90,7 +90,34 @@
   </div>
 </div>
 <!--End Header -->
+<div id="myModal1" class="modal fade" role="dialog">
+  <div class="modal-dialog">
 
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header deck-pop">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">I'M INTERESTED IN INVESTING</h4>
+      </div>
+      <div class="modal-body">
+        <form action="">
+          <p>Please enter your reservation amount. This is a non-binding soft reservation. A company representative will be notified and you'll have an opportunity to contact.</p>
+          <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1">$</span>
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+          </div>
+          <h4 class="Comments-hd">Comments or Questions (optional)</h4>
+          <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+          <p class="help-block text-danger"></p>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button id="invester-form"type="button" class="btn btn-default request-btn" data-dismiss="modal" onclick="window.location.href='#'">MAKE A RESERVATION</button>
+      </div>
+    </div>
+
+  </div>
+</div>
 <!-- NodeBomb presention -->
 <section class="presentation">
   <div class="container">
