@@ -81,8 +81,12 @@
           <p>Please enter your reservation amount. This is a non-binding soft reservation. A company representative will be notified and you'll have an opportunity to contact.</p>
           <div class="input-group">
             <span class="input-group-addon" id="basic-addon1">$</span>
-            <input type="text" name="amount" class="form-control" aria-label="Amount (to the nearest dollar)">
+            <input type="text" name="amount" class="form-control" aria-label="Amount (to the nearest dollar)" pattern="[0-9]*" title="Enter numbers only." placeholder="Amount" required>
           </div>
+          <h4 class="Comments-hd">Email</h4>
+          <input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
+          <h4 class="Comments-hd">Contact Number</h4>
+          <input type="text" class="form-control" id="Phone" name="Phone" placeholder="Contact Number" pattern="[0-9]*" title="Enter numbers only." required>
           <h4 class="Comments-hd">Comments or Questions (optional)</h4>
           <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message." name="message"></textarea>
           <p class="help-block text-danger"></p>
