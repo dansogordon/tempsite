@@ -55,7 +55,9 @@
       <div class="modal-body">
         <form action="" id="UserLoginForm">
           <h4><strong>Our 12-month Seed Funding Round is $475K</strong></h4><br>
-          <span class="user-access-pswd"><p>Password</p></span><span class="password-label"><input type="password" value="" id="password"></span>
+          <div class="user-access-pswd"><strong><p>Password</p></strong></div>
+          <div id="error-flash" style = "display: none">Incorrect password</div>
+          <div class="password-label"><span><input type="password" value="" id="password"></span><span><button id="submit" type="button" class="btn btn-default submit-btn"> Submit </button></span></div>
         </form>
         <div class="seperater">OR</div>
         <button id="invester-form"type="button" class="btn btn-default request-btn" data-dismiss="modal" class="modal fade" role="dialog" data-toggle="modal" data-target="#myModal1">REQUEST ACCESS</button>
@@ -75,15 +77,25 @@
     //   window.location.href = "/";
     // }) 
     $('#UserLoginForm').submit(function(){
+      kiran();
+    });
+
+    document.getElementById("submit").addEventListener("click", function () {
+      kiran();
+    });
+
+    function kiran() {
       var password = $('#password').val();
       if (password === 'Bombsquad'){
         $('#myModal').modal('hide');
         return false;
       }else{
-        window.location.href = "/";
+        $("#error-flash").show();
+        // alert("sdsad");
+        // window.location.href = "/";
         // return false;
       }
-    });
+    }
     $('#myModal').modal()
   })
 </script>
