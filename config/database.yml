@@ -7,7 +7,7 @@
 default: &default
   adapter: mysql2
   username: root
-  password: a
+  password: 
   pool: 5
   timeout: 5000
 
@@ -23,5 +23,10 @@ test:
   database: db/nodebomb_test
 
 production:
-  <<: *default
-  database: db/nodebomb_prod
+  adapter: mysql2
+  host: us-cdbr-iron-east-02.cleardb.net
+  username: b1d67068e4608f
+  password: e979f241
+  database: heroku_06e5330dde514f0
+  pool: 5
+  timeout: 5000
