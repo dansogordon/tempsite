@@ -48,7 +48,7 @@ Rails.application.configure do
     port: "587",
     enable_starttls_auto:  true,
     authentication: :login,
-    user_name: "talktestruby@gmail.com",
-    password: "rubyrubyruby"
+    user_name: ENV["email"],
+    password: ENV["password"]
   } 
 end
