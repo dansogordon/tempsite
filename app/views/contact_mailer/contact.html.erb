@@ -4,12 +4,12 @@
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
   </head>
   <body>
-    <p>Name: <%= @name %></p>
+    <p><b>Name: </b><%= @name %></p>
     <p>
-      Email: <%= @email %>.<br>
+      <b>Email: </b><%= @email %>.<br>
     </p>
     <p>
-      Message: <%= @message %>.
+      <b>Message: </b></br> <%= @message.html_safe %>.
     </p>
   </body>
 </html>
