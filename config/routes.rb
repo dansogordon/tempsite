@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   get 'contact' => 'home#contact'
   get 'invester_form' => 'home#invester_form'
 
+  post 'post_contact' => 'home#post_contact'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

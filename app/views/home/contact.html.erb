@@ -7,8 +7,7 @@
     </div>  
     <div class="row">
       <div class="col-lg-12">
-        <form name="sentMessage" id="contactForm"action="https://getsimpleform.com/messages?form_api_token=b5ff46c898c2ab938350fa6ceb999eff" method="post" >
-          <input type='hidden' name='redirect_to' value=<%= contact_url%> />
+        <%= form_for :contact, url: post_contact_path, id: "contactForm" do %>
           <div class="row">
             <div class="col-md-6">
               <div class="form-group">
@@ -51,7 +50,7 @@
               </div>
             </div>
           </div>
-        </form>
+        <%end%>
       </div>
     </div>
   </div>

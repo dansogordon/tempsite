@@ -13,4 +13,12 @@ class HomeController < ApplicationController
   end
   def invester_form
   end
+
+  def post_contact
+    name = params[:name]
+    email = params[:email]
+    message = params[:message]
+    ContactMailer.contact(name, email, message).deliver!
+    redirect_to contact_path
+  end
 end
