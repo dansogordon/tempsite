@@ -79,14 +79,18 @@ Rails.application.configure do
 
   # Mailer setting
 
-  config.action_mailer.delivery_method = :smtp
   config.action_mailer.default_url_options = { :host => 'http://staging.kapilrajnakhwa.com' }
+  #Options for smtp delivery
+   Delivery method :smtp
+  config.action_mailer.delivery_method = :smtp
+
   #Options for smtp delivery
   config.action_mailer.smtp_settings = {
     address: "smtp.gmail.com",
     port: "587",
-    authentication: :plain,
-    user_name: "talktestruby@gmail.com",
+    enable_starttls_auto:  true,
+    authentication: :login,
+    user_name: "testtalkruby@gmail.com",
     password: "rubyrubyruby"
   }
 end
