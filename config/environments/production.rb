@@ -86,8 +86,7 @@ Rails.application.configure do
     address: "smtp.gmail.com",
     port: "587",
     authentication: :plain,
-    user_name: ENV["email"],
-    password: ENV["password"],
-    openssl_verify_mode: 'none' 
+    user_name: "talktestruby@gmail.com",
+    password: "rubyrubyruby"
   }
 end
