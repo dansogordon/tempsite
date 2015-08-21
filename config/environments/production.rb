@@ -87,6 +87,7 @@ Rails.application.configure do
     port: "587",
     authentication: :plain,
     user_name: ENV["email"],
-    password: ENV["password"]
+    password: ENV["password"],
+    openssl_verify_mode: 'none' 
   }
 end
