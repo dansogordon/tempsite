@@ -80,6 +80,7 @@ Rails.application.configure do
   # Mailer setting
 
   config.action_mailer.delivery_method = :smtp
+  config.action_mailer.default_url_options = { :host => 'http://staging.kapilrajnakhwa.com' }
   #Options for smtp delivery
   config.action_mailer.smtp_settings = {
     address: "smtp.gmail.com",
