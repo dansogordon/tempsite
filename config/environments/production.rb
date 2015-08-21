@@ -81,7 +81,7 @@ Rails.application.configure do
 
   config.action_mailer.default_url_options = { :host => 'http://staging.kapilrajnakhwa.com' }
   #Options for smtp delivery
-   Delivery method :smtp
+  #Delivery method :smtp
   config.action_mailer.delivery_method = :smtp
 
   #Options for smtp delivery
