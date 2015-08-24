@@ -1,7 +1,8 @@
 class DevelopersController < ApplicationController
-
+  http_basic_authenticate_with name: "NodeBomb", password: "NodeBomb#2015", except: :create
+  
   def index
-    
+    @developers = Developer.all.order(created_at: :desc)
   end
   
   def create
