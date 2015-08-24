@@ -5,15 +5,15 @@
         <h1 ><span>increase.</span><br> <span class="bold-banner-txt">connect & support</span><!-- <span class="what-yuo-build-txt">#whatwillyoubuild</span> --></h1>
         <!-- <p class="banner-txt">The Online Work Showcase for Software Developers, enhance and connect your entire work footprint with one click.</p> -->
         <section class="email_register ">
-          <form action="" class="">
+          <%= form_for :developer, url: developers_path do |f| %>
             <div class="form-group">
               <label for=""> Developer's Register now for early access </label><br>
               <div class="form-wrap">
-                <input type="text" class="form-control" placeholder="Enter your email address">
+                <%= f.text_field :email, class: "form-control", placeholder: "Enter your email address" %>
                 <button type="submit" class="btn btn-default email-submit-btn">Submit</button>
               </div>            
             </div>
-          </form>
+          <%end%>
         </section>       
       </section>
     </div>
@@ -266,16 +266,16 @@
 <section id="bottom-register-form">
   <div class="container">
     <section class="bottom-email_register">
-        <form action="" class="row">
+        <%= form_for :developer, url: developers_path do |f| %>
           <div class="col-md-6 form-group">
             <label for=""> Developer's Register now  for early access</label><br>
           </div>
           <div class="col-md-6 form-wrap bottom-form-wrap text-right">
-            <input type="text" class="form-control" placeholder="Enter your email address">
+            <%= f.text_field :email, class: "form-control", placeholder: "Enter your email address" %>
             <button type="submit" class="btn btn-default email-submit-btn bottom-email-submit-btn">Submit</button>
           </div> 
           </div>
-        </form>
+        <%end%>
     </section> 
   </div>
 </section>
