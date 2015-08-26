@@ -1,0 +1,32 @@
+# SQLite version 3.x
+#   gem install sqlite3
+#
+#   Ensure the SQLite 3 gem is defined in your Gemfile
+#   gem 'sqlite3'
+#
+default: &default
+  adapter: mysql2
+  username: root
+  password: 
+  pool: 5
+  timeout: 5000
+
+development:
+  <<: *default
+  database: db/nodebomb_dev
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+test:
+  <<: *default
+  database: db/nodebomb_test
+
+production:
+  adapter: mysql2
+  host: us-cdbr-iron-east-02.cleardb.net
+  username: b1d67068e4608f
+  password: e979f241
+  database: heroku_06e5330dde514f0
+  pool: 5
+  timeout: 5000
