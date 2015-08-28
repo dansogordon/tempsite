@@ -6,11 +6,11 @@ development:
   password: a
 
 production:
-  adapter: mysql2
-  database: heroku_06e5330dde514f0
-  host: mysql2://b1d67068e4608f:e979f241@us-cdbr-iron-east-02.cleardb.net/heroku_06e5330dde514f0?reconnect=true
-  username: b1d67068e4608f
-  password: e979f241
+  adapter: postgresql
+  database: d2lrqlsun1e3pb
+  host: ec2-184-73-165-193.compute-1.amazonaws.com
+  username: pdqqtcvlcrdrrv
+  password: KLMyOG-6wOov2G3jmn0yEAXsGA
 
 test:
   adapter: mysql2
