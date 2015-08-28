@@ -79,7 +79,7 @@ Rails.application.configure do
 
   # Mailer setting
 
-  config.action_mailer.default_url_options = { :host => 'http://staging.kapilrajnakhwa.com' }
+  config.action_mailer.default_url_options = { :host => 'http://www.nodebomb.com' }
   #Options for smtp delivery
   #Delivery method :smtp
   config.action_mailer.delivery_method = :smtp
