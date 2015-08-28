@@ -3,7 +3,7 @@ development:
   database: temp_database
   host: localhost
   username: root
-  password: a
+  password: 
 
 production:
   adapter: postgresql
@@ -17,4 +17,4 @@ test:
   database: temp_database_test
   host: localhost
   username: root
-  password: a
+  password: 
