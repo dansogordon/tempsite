@@ -40,7 +40,6 @@ Rails.application.configure do
   # config.action_view.raise_on_missing_translations = true
 
   # Mailer setting
-
   config.action_mailer.delivery_method = :smtp
   #Options for smtp delivery
   config.action_mailer.smtp_settings = {
