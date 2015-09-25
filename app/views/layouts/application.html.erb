@@ -3,7 +3,6 @@
 <head>
   <title>NodeBomb</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>  
   <% if (params[:controller]=="home" && params[:action] =="index" ) %>
@@ -22,5 +21,8 @@
       </div>
     </div>
   </div>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.1.5/angular.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js" type="text/javascript" charset="utf-8"></script>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   </body>
 </html>
