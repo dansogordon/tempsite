@@ -1,21 +1,32 @@
  <header class="hero">  
   <div class="container banner-margin-top">
-    <div class="row">      
-      <section class="header_content">
-        <h1 ><span>increase.</span><br> <span class="bold-banner-txt">connect & support</span><!-- <span class="what-yuo-build-txt">#whatwillyoubuild</span> --></h1>
-        <!-- <p class="banner-txt">The Online Work Showcase for Software Developers, enhance and connect your entire work footprint with one click.</p> -->
-        <section class="email_register ">
-          <%= form_for :developer, url: developers_path do |f| %>
-            <div class="form-group">
-              <label for=""> Developer's Register now for early access </label><br>
-              <div class="form-wrap">
-                <%= f.text_field :email, class: "form-control", placeholder: "Enter your email address" %>
-                <button type="submit" class="btn btn-default email-submit-btn">Submit</button>
-              </div>            
-            </div>
-          <%end%>
-        </section>       
-      </section>
+    <div class="row">
+      <div class="col-md-6">      
+        <section class="header_content text-center">
+        
+          <div class="hm-bnr-logo text-center">
+            <%= image_tag ("hom-bnr-logo.png")%>
+          </div>
+          <h1 ><span>#increase</span><br> <!-- <span class="bold-banner-txt">connect & support</span> --><!-- <span class="what-yuo-build-txt">#whatwillyoubuild</span> --></h1>
+          <!-- <p class="banner-txt">The Online Work Showcase for Software Developers, enhance and connect your entire work footprint with one click.</p> -->
+          <section class="email_register ">
+            <%= form_for :developer, url: developers_path do |f| %>
+              <div class="form-group form-cntr">
+                <label for=""> Developer's Register now for early access </label><br>
+                <div class="form-wrap">
+                  <%= f.text_field :email, class: "form-control", placeholder: "Enter your email address" %>
+                  <button type="submit" class="btn btn-default email-submit-btn">Submit</button>
+                </div>            
+              </div>
+            <%end%>
+          </section>
+        </section>
+      </div>       
+      <div class="col-md-6">
+        <div class="hm-bnr-phone text-center">
+          <%= image_tag ("hm-bnr-phone.png")%>
+        </div>
+      </div>
     </div>
   </div>
   <div id="navigation">
